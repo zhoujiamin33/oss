@@ -1,4 +1,4 @@
-package com.example.demo2.entity;
+package com.example.demo2.config;
 
 import lombok.Data;
 import org.springframework.beans.factory.InitializingBean;

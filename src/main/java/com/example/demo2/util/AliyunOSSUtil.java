@@ -10,7 +10,7 @@ import com.aliyun.oss.OSSClient;
 import com.aliyun.oss.OSSException;
 import com.aliyun.oss.common.auth.DefaultCredentialProvider;
 import com.aliyun.oss.model.*;
-import com.example.demo2.entity.AliyunOssConfig;
+import com.example.demo2.config.AliyunOssConfig;
 import com.example.demo2.entity.AliyunOssResult;
 import org.springframework.web.multipart.MultipartFile;
 
