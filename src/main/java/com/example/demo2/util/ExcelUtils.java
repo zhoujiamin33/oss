@@ -19,7 +19,7 @@ import java.util.NoSuchElementException;
 /**
  * @author Tina
  */
-public class extUtils {
+public class ExcelUtils {
     public static void exportExcel(List<?> list, String title, String sheetName, Class<?> pojoClass, String fileName,
                                    boolean isCreateHeader, HttpServletResponse response) {
         ExportParams exportParams = new ExportParams(title, sheetName);
