@@ -1,6 +1,7 @@
 package com.example.demo2.service;
 
 import com.example.demo2.entity.UserEntity;
+import org.apache.xmlbeans.impl.xb.xsdschema.Attribute;
 
 import java.util.List;
 
@@ -15,4 +16,10 @@ public interface UserService {
      * @return
      */
     List<UserEntity> getUser();
+
+    /**
+     *
+     * @param userEntity
+     */
+    void addUser(UserEntity userEntity);
 }

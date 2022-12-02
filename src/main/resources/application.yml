@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: 8080
 
 aliyun:
   oss:
@@ -9,27 +9,35 @@ aliyun:
     bucketName: xxxxxx
     policyExpire: 300
     maxSize: 10
-# 连接的那个数据库
-spring.redis.database=0
-# redis服务的ip地址
-spring.redis.host=127.0.0.1
-# redis端口号
-spring.redis.port=6379
-# redis的密码，没设置过密码，可为空
-spring.redis.password=1234
-# ========================数据库相关配置=====================
-spring.datasource.driver-class-name=com.mysql.cj.jdbc.Driver
-spring.datasource.url=jdbc:mysql://localhost:3306/presonal?useUnicode=true&characterEncoding=UTF-8&serverTimezone=Asia/Shanghai
-spring.datasource.username=root
-spring.datasource.password=root
-# 使用阿里巴巴druid数据源，默认使用自带
-spring.datasource.type=com.alibaba.druid.pool.DruidDataSource
-#开启控制台打印sql
-mybatis.configuration.log-impl=org.apache.ibatis.logging.stdout.StdOutImpl
-# mybatis 下划线转驼峰配置，两者都可以
-# mybatis.configuration.mapUnderscoreToCamelCase=true
-mybatis.configuration.map-underscore-to-camel-case=true
-# 配置扫描
-mybatis.mapper-locations=classpath:mapper/*.xml
-# 实体类所在的包别名
-mybatis.type-aliases-package=com.cyb.mobile.domain
+xxl:
+  job:
+    accessToken:
+    admin:
+      addresses: http://127.0.0.1:8081/xxl-job-admin
+    executor:
+      appname: multi-thread
+      address:
+      ip:
+      logpath: /data/applogs/xxl-job/jobhandler
+      port: 9981
+      logretentiondays: 30
+spring:
+  datasource:
+    url : jdbc:mysql://127.0.0.1:3306/personal?useUnicode=true&characterEncoding=UTF-8&autoReconnect=true&serverTimezone=Asia/Shanghai
+    username : root
+    password : 1234
+  redis:
+    host: 192.168.64.9
+    port: 6379
+    password: ydy@123456
+    database: 1
+    lettuce:
+      pool:
+        # 连接池最大连接数
+        max-active: 200
+        # 连接池最大阻塞等待时间（使用负值表示没有限制）
+        max-wait: -1ms
+        # 连接池中的最大空闲连接
+        max-idle: 10
+        # 连接池中的最小空闲连接
+        min-idle: 0

@@ -1,6 +1,9 @@
 package com.example.demo2.entity;
 
+import lombok.AllArgsConstructor;
+import lombok.Builder;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.time.LocalDateTime;
 
@@ -10,6 +13,9 @@ import java.time.LocalDateTime;
  * Created on 2022/9/2 14:50
  */
 @Data
+@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 public class UserEntity {
     /**
      * 用户编码

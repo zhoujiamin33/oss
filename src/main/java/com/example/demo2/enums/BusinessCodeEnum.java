@@ -1,7 +1,7 @@
 package com.example.demo2.enums;
 
 public enum BusinessCodeEnum {
-    ENT_MEMBER("会员编号", 12, "HY"),
+    ENT_MEMBER("用户编号", 12, "U"),
     ;
 
     private String name;
