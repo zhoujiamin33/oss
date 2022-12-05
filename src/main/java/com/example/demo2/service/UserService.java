@@ -18,7 +18,7 @@ public interface UserService {
     List<UserEntity> getUser();
 
     /**
-     *
+     * adduser
      * @param userEntity
      */
     void addUser(UserEntity userEntity);

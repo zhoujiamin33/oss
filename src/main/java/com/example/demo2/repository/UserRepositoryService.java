@@ -10,7 +10,7 @@ import com.example.demo2.entity.UserEntity;
 public interface UserRepositoryService {
 
     /**
-     *
+     * addUser
      * @param userEntity
      */
     void addUser(UserEntity userEntity);

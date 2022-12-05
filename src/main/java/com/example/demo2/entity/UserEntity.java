@@ -35,6 +35,27 @@ public class UserEntity {
     private String englishName;
 
     /**
+     * 密码
+     */
+    private String password;
+
+    /**
+     * 手机号
+     */
+    private String mobile;
+
+    /**
+     * 邮箱
+     */
+    private String email;
+
+
+    private String streetAddress;
+
+
+    private String headPortrait;
+
+    /**
      * 简称
      */
     private String shortName;
