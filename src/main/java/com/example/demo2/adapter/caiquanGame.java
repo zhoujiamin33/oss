@@ -61,10 +61,10 @@ public class caiquanGame {
         while (goOn.equals("y")){
             System.out.println("玩家一出拳:1.剪刀 2.石头 3.布(输入相应的数字)");
             play = input.nextInt();
-            System.out.println("玩家一出拳:"+rule.get(play));
+            System.out.println("玩家一出:"+rule.get(play));
             com = (int) (Math.random() * 3 + 1);
             System.out.println(com);
-            System.out.println("玩家二出拳:"+rule.get(com));
+            System.out.println("玩家二出:"+rule.get(com));
             count++;
             if(play == com){
                 System.out.println("平手哦继续加油！");
